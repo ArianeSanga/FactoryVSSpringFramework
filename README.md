@@ -41,7 +41,7 @@ package com.example.factory.service;
 public interface PaymentProcessor {
     void process(double amount);
 }
-
+---
 package com.example.factory.service;
 
 public class CreditCardPaymentProcessor implements PaymentProcessor {
@@ -51,7 +51,7 @@ public class CreditCardPaymentProcessor implements PaymentProcessor {
         System.out.println("Payment value: $ " + amount);
     }
 }
-
+---
 package com.example.factory.service;
 
 public class PixPaymentProcessor implements PaymentProcessor {
