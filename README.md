@@ -42,4 +42,14 @@ public interface PaymentProcessor {
     void process(double amount);
 }
 
+package com.example.factory.service;
+
+public class CreditCardPaymentProcessor implements PaymentProcessor {
+    @Override
+    public void process(double amount) {
+        System.out.println("[Processing payment with Credit Card]");
+        System.out.println("Payment value: $ " + amount);
+    }
+}
+
 
