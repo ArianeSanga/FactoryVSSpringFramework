@@ -42,6 +42,4 @@ public interface PaymentProcessor {
     void process(double amount);
 }
 
-##Implementações
-###Cartão de Crédito
 
