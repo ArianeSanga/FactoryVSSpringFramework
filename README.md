@@ -52,4 +52,14 @@ public class CreditCardPaymentProcessor implements PaymentProcessor {
     }
 }
 
+package com.example.factory.service;
+
+public class PixPaymentProcessor implements PaymentProcessor {
+    @Override
+    public void process(double amount) {
+        System.out.println("[Processing payment with Pix]");
+        System.out.println("Payment value: $ " + amount);
+    }
+}
+
 
